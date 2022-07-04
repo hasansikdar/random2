@@ -1,0 +1,59 @@
+.design {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.left {
+    float:left;
+}
+.right {
+    overflow:hidden;
+}
+.right,
+.right .border {
+    align-items:center;
+    justify-content:start !important;
+}
+.border {
+    box-shadow:0 0 20px;
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:right;
+    transition:1s;
+    border:10px inset #ccc;
+}
+.left:hover,
+.left .border:hover {
+    transition-delay:1s;
+    justify-content:start;
+}
+.right:hover,
+.right .border:hover {
+    justify-content:end !important;
+}
+.border:hover {
+    box-shadow:0 0 5px;
+    transition:1s !important;
+    border:10px dashed #ccc;
+}
+.a {
+    height:500px;
+    width:500px;
+}
+.b {
+    height:400px;
+    width:400px;
+}
+.c {
+    height:300px;
+    width:300px;
+}
+.d {
+    height:200px;
+    width:200px;
+}
+.e {
+    height:100px;
+    width:100px;
+}
